@@ -8,15 +8,14 @@ namespace lesson_3_10_2
     {
         static void Main(string[] args)  // точка входа
         {
-            Write("\n Здравствуйте! Введите число карт у вас на руках и нажмите \"Enter\": ");
+            Write("\nЗдравствуйте! Введите число карт у вас на руках и нажмите \"Enter\": ");
             int number = int.Parse(ReadLine());
             int sum = 0;
-
+   
                 for (int i = 0; i < number; i++)
                 {
                     WriteLine("\nВведите номинал карты от 1-10, где Валет - J, Дама - Q, Король - K, Туз - T и нажмите \"Enter\": ");
-                    string card = ReadLine();
-                
+                    string card = ReadLine();               
                     switch (card)
                     {
                         case "J":
@@ -59,11 +58,12 @@ namespace lesson_3_10_2
                             WriteLine("Ввели не карту");
                             break;
                     }
-                    WriteLine($"Сумма всех карт: {sum} ");
-                    ReadKey();
-                    break;
+                    
                 }
-        }
+            {
+                WriteLine($"Сумма всех карт: {sum}");
+                ReadKey();
+            }
     }
+        }
 }
-                 
